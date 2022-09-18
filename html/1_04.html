@@ -1,0 +1,83 @@
+<!--
+    <ul> unordered list : 순서로써 의미가 없는 리스트
+    <ol> ordered list : 순서가 의미 있는 리스트
+    <li> list item : 리스트에 아이템으로 들어가는 태그
+
+    ul, ol의 1촌 자식은 li만 가능
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS 01-04</title>
+    <link rel="stylesheet" href="../css/1_04.css">
+</head>
+<body>
+    <h1>수련회 준비물</h1>
+    <ul>
+        <li>이틀치 옷</li>
+        <li>세면 도구</li>
+        <li>수건</li>
+        <li>
+            학습 도구
+            <ul>
+                <li>노트북</li>
+                <li>필기구</li>
+                <li>교재</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <h1>계란 볶음밥 만들기</h1>
+    <!--
+        <ol type="A" start="4">
+            type -> 1, I, i, A, a
+            strat -> 정수
+    -->
+    <ol>
+        <li>
+            재료 준비
+            <ul>
+                <li>밥</li>
+                <li>계란</li>
+                <li>파</li>
+                <li>간장</li>
+            </ul>
+        </li>
+        <li>파를 기름에 볶기</li>
+        <li>밥 넣고 볶기</li>
+        <li>계란을 넣고 스크램블</li>
+        <li>간장을 넣고 마저 볶아 완성</li>
+    </ol>
+
+    <hr>
+    <!-- 
+        용어와 정의 나열 
+        <dl>
+        <dt> 
+        <dd>
+    -->
+
+    <dl>
+        <dt>프로그래밍</dt>
+        <dd>컴퓨터 프로그램을 작성하는 일</dd>
+
+        <dt>넓이</dt>
+        <dt>광</dt>
+        <dt>면적</dt>
+        <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+        
+        <dt>사과</dt>
+        <dd>사과 나무의 열매</dd>
+        <dd>자기의 잘못을 인정하고 용서를 빔</dd>
+    </dl>
+
+
+</body>
+</html>

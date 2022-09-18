@@ -1,0 +1,38 @@
+body {
+    padding: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead, tfoot {
+    background-color: #f8f8d8;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+caption {
+    margin-top: 12px;
+    caption-side: bottom;
+}
+
+.sunday {
+    background-color: #aaa;
+    width: 12%;
+}
+
+.weekday {
+    background-color: #ccc;
+    width: 15%;
+}
+
+.saturday {
+    background-color: #aaaaaa;
+    width: 18%;
+}

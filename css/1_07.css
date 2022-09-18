@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+
+body {
+	padding: 16px;
+}
+
+h1, h2 {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #555;
+}
+
+h2 {
+	margin-top: 1.2em;
+	margin-bottom: .48em;
+	font-size: 0.9em;
+	font-weight: 900;
+	color: slateblue;
+}
+
+h2::before {
+	content: '▶';
+	font-size: 0.5em;
+	margin-right: 8px;
+	vertical-align: 10%;
+	opacity: 0.33;
+}
+
+p {
+	margin-top: 0.48em;
+	line-height: 1.5em;
+}
+
+u {
+	text-decoration: #f00 wavy underline;
+}
+
+b { font-weight: bold; }
+i { font-style: italic; }
+
+* {
+    transition: all 250ms;
+}
+
+body {
+    padding: 0;
+}
+
+main {
+    display: flex !important;
+    height: 100vh;
+}
+
+.result, .controls {
+    padding: 24px;
+    overflow-y: scroll;
+}
+.result {
+    flex-grow: 1;
+}
+
+.result h1, .result h2 {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.result h1 {
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #555;
+}
+
+.result h2 {
+	margin-top: 1.2em;
+	margin-bottom: .48em;
+	font-size: 0.9em;
+	font-weight: 900;
+	color: slateblue;
+}
+
+.controls {
+    flex-shrink: 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+    background-color: #f8f8f8;
+    border-left: 1px solid #f0f0f0;
+}
+
+.controls fieldset {
+    padding-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.controls fieldset legend {
+    margin-left: -4px;
+    padding: 0 8px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: slateblue;
+}
+
+fieldset h6 {
+    margin: 12px 0 6px;
+    color: gray;
+}
+fieldset legend + h6 {
+    margin-top: 0;
+}
+form h6 span {
+    margin-left: 2px;
+    color: darkgray;
+}
+
+input[type=radio] + label {
+    margin: 0 12px 0 4px;
+    cursor: pointer;
+}
+
+select {
+    max-width: 240px;
+}

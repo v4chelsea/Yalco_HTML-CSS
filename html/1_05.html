@@ -1,0 +1,40 @@
+<!--
+    이미지 넣기
+    <img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴팁 텍스트)">
+    이미지 파일 경로를 통해 이미지를 받아오고, 이미지를 불러오지 못할 때 띄워주는 대체 텍스트가 반드시 적용되어 있어야 함
+    alt, title의 내용을 중복하는것은 권장하지 않음
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS 01-05</title>
+</head>
+<body>
+    <img 
+        src="https://showcases.yalco.kr/html-css/01-05/coding.png" 
+        alt="대체 텍스트"
+        title="프로그래밍"
+        height="300"
+    >
+    <img 
+        src="https://cdn.pixabay.com/photo/2022/06/21/22/48/flower-7276636_960_720.jpg" 
+        alt="대체 텍스트"
+        title="프로그래밍"
+        height="500"
+    >
+    
+    <hr>
+
+    <img src="https://showcases.yalco.kr/html-css/01-05/map.png" alt="맵" usemap="#image-map">
+    <map name="image-map">
+    <area target="_blank" alt="Google" title="Google" href="https://www.google.com" coords="141,140,96" shape="circle">
+    <area target="_blank" alt="Apple" title="Apple" href="https://www.apple.com" coords="332,50,510,227" shape="rect">
+    <area target="_blank" alt="Microsoft" title="Microsoft" href="https://www.microsoft.com" coords="650,51,598,139,650,229,751,228,802,141,753,52" shape="poly">
+    </map>
+    
+</body>
+</html>

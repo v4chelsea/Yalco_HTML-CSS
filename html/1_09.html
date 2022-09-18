@@ -1,0 +1,253 @@
+<!--
+    사용자로부터 입력 받기2
+    (사용자의 이벤트 처리)
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/1_09.css">
+    <title>HTML & CSS 01-09</title>
+</head>
+<body>
+    <h1>택스트 관련 인풋 타입</h1>
+
+    <form action="#">
+        <label for="text">text</label><br>
+        <input 
+            id="text" 
+            name="text_1" 
+            type="text"
+            placeholder="5자 이하"
+            maxlength="5"
+        >
+
+        <br><br>
+
+        <label for="pw">password</label><br>
+        <input 
+            id="pw" 
+            name="pw_1" 
+            type="password"
+            placeholder="4자 이상"
+            minlength="4"
+        >
+
+        <br><br>
+
+        <label for="search">search</label><br>
+        <input id="search" name="search_1" type="search">
+
+        <br><br>
+
+        <label for="tel">tel</label><br>
+        <input id="tel" name="tel_1" type="tel">
+
+        <br><br>
+
+        <button type="submit">제출</button>
+    </form>
+
+    <hr>
+
+    <h1>숫자 관련 인풋 타입</h1>
+
+    <form action="#">
+        <label for="num">number</label><br>
+        <input 
+            id="num_1" 
+            name="num_1" 
+            type="number"
+            min="0"
+            max="100"
+            step="10"
+        >
+
+        <br><br>
+
+        <label for="range">range</label><br>
+        <input 
+            id="range" 
+            type="range" 
+            min="0" 
+            max="100" 
+            step="1"
+        >
+
+        <br><br>
+
+        <label for="date">date</label><br>
+        <input 
+            id="date" 
+            type="date"
+            min="1999-01-01"
+            max="2099-12-31"
+            step="week"
+        >
+    </form>
+
+    <hr>
+
+    <h1>체크 관련 인풋 타입</h1>
+    <!--
+        radio를 하나의 요소로 묶어주기 위해서는 name을 하나로 묶어줘야 함
+        그래야 서로 Grouping되어 radio 기능을 실행할 수 있음
+    -->
+
+    <form action="#">
+        <h2>checkbox</h2>
+        <input
+            id="cb"
+            type="checkbox"
+            checked
+        >
+        <label for="cb">유기농</label>
+
+        <br><br>
+
+        <h2>radio</h2>
+        <input
+            id="rb_1"
+            name="fruit"
+            value="grape"
+            type="radio"
+            checked
+        >
+        <label for="rb_1">포도</label>
+        
+        <input 
+            id="rb_2" 
+            name="fruit" 
+            value="apple"
+            type="radio"
+        >
+        <label for="rb_2">사과</label>
+        
+        <input 
+            id="rb_3" 
+            name="fruit" 
+            value="orange"
+            type="radio" 
+        >
+        <label for="rb_3">오렌지</label>
+        
+        <br>
+
+        <input 
+            id="rb_4" 
+            name="fruit" 
+            value="carrot"
+            type="radio" 
+        >
+        <label for="rb_4">당근</label>
+        
+        <input 
+            id="rb_5" 
+            name="fruit" 
+            value="tomato"
+            type="radio" 
+        >
+        <label for="rb_5">토마토</label>
+
+    </form>
+    
+    <hr>
+
+    <h1>기타 인풋 타입</h1>
+    <!--
+        file input은 별도로 받을 파일 형식을 지정할 수 있음
+        hidden input은 사용자에게 굳이 보여주지 않을 정보를 전달할 떄 사용할 수 있음
+        email input은 사용자의 입력에 email형식을 강제할 수 있음 / 하지만 허술하기 떄문에 철저히 확인하려면 JS로 작성 필요
+    -->
+    <form action="#">
+        <label for="file">file</label> <br>
+        <input 
+            id="file"
+            type="file"
+            accept="image/png, image/jpeg"
+            multiple
+        >
+
+        <br><br>
+
+        <label for="hidden">hidden</label> <br>
+        <input 
+            id="hidden"
+            type="hidden"
+        >
+
+        <br><br>
+
+        <label for="email">E-Mail</label> <br>
+        <input 
+            id="email"
+            type="email"
+        >
+
+        <br><br>
+        
+        <button type="submit">제출</button>
+    </form>
+
+    <hr>
+
+    <h1>인풋 요소 공통(대부분) 속성</h1>
+
+    <form action="#">
+        <label for="value">value</label><br>
+        <input id="value_1" type="text" value="지정됨">
+
+        <br><br>
+        
+        <label for="af">autofocus</label><br>
+        <input id="af" type="text" placeholder="자동 포커스됨" autofocus>
+
+        <br><br>
+        
+        <label for="ro">readonly</label><br>
+        <input id="ro" type="text" value="읽기만 가능, 전송됨" readonly>
+
+
+        <br><br>
+        
+        <label for="da">disabled</label><br>
+        <input id="da" type="text" value="입력 불가, 전송 안됨" disabled>
+
+        <br><br>
+
+        <input 
+            type="radio" 
+            name="fruit2" 
+            id="fruit2_apple"
+            value="apple2"
+            checked
+        >
+        <label for="fruit2_apple">사과</label>
+
+        <input 
+            type="radio" 
+            name="fruit2" 
+            id="fruit2_grape"
+            value="grape2"
+        >
+        <label for="fruit2_grape">포도</label>
+
+        <input 
+            type="radio" 
+            name="fruit2" 
+            id="fruit2_orange"
+            value="orange2"
+            disabled
+        >
+        <label for="fruit2_orange">오렌지(품절)</label>
+
+        <br><br>
+
+        <button type="submit">제출</button>
+    </form>
+
+</body>
+</html>
